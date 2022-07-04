@@ -9,10 +9,11 @@ def main():
 	if FirstNumber.isdigit() and SecondNumber.isdigit():
 		FirstNumber= int(FirstNumber)
 		SecondNumber= int(SecondNumber)
+		operation= operation
 	else:
 		print("the numbers were invalid")
 		return FirstNumber, SecondNumber, operation
-			
+	
 	if operation == "+":
 		sum= FirstNumber + SecondNumber
 		print(f"The answer is : {sum}")
