@@ -8,15 +8,17 @@ def main():
 	if operation == "+":
 		sum= FirstNumber + SecondNumber
 		print(f"The answer is : {sum}")
-	elif operation == "-":
+	if operation == "-":
 		sub= FirstNumber - SecondNumber
 		print(f"The answer is : {sub}")
-	elif operation == "/":
+	if operation == "/":
 		div= FirstNumber / SecondNumber
 		print(f"The answer is : {div}")
-	elif operation == "*":
+	if operation == "*":
 		mul= FirstNumber * SecondNumber
 		print(f"The answer is : {mul}")
+	else: 
+		print("Invalid operation")
 
 
 
