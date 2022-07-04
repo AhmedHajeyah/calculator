@@ -1,10 +1,18 @@
 
 def main():
 	#write your code here
-	pass
-	FirstNumber= float(input("Enter first number: "))
-	SecondNumber= float(input("Enter second number: "))
+	
+	FirstNumber= input("Enter first number: ")
+	SecondNumber= input("Enter second number: ")
 	operation= input("Choose the operation (+, -, /, *): ")
+	
+	if FirstNumber.isdigit() and SecondNumber.isdigit():
+		FirstNumber= int(FirstNumber)
+		SecondNumber= int(SecondNumber)
+	else:
+		print("the numbers were invalid")
+		return FirstNumber, SecondNumber, operation
+			
 	if operation == "+":
 		sum= FirstNumber + SecondNumber
 		print(f"The answer is : {sum}")
